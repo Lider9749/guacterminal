@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF: Обучение по поиску флага в Linux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        .steps {
+            flex: 1;
+            padding: 20px;
+            border-right: 2px solid #ccc;
+            overflow-y: auto;
+        }
+        .terminal {
+            flex: 2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+        }
+        .terminal iframe {
+            width: 100%;
+            height: 80%;
+            border: none;
+        }
+        .flag-input {
+            margin-top: 20px;
+        }
+        .flag-input input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CTF: Обучение по поиску флага в Linux</h1>
+</header>
+
+<main>
+    <div class="steps">
+        <h2>Этапы курса</h2>
+        <ol>
+            <li>Введение в CTF</li>
+            <li>Основы Linux</li>
+            <li>Поиск флагов</li>
+            <li>Использование терминала</li>
+            <li>Практическое задание</li>
+            <li>Заключение</li>
+        </ol>
+    </div>
+    <div class="terminal">
+        <iframe src="http://192.168.5.248:8080/guacamole/" title="Терминал"></iframe>
+        <div class="flag-input">
+            <h3>Введите найденный флаг:</h3>
+            <input type="text" placeholder="Флаг...">
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
